@@ -1,0 +1,8 @@
+{
+  "sender": "lab.alice@atlas.example.test",
+  "recipient": "external@example.org",
+  "route_type": "external",
+  "findings": [],
+  "model_result": "CONFIGURATION_APPEARS_VALID",
+  "evidence_type": "SIMULATED_CONFIG_ANALYSIS"
+}

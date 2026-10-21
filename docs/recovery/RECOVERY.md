@@ -1,0 +1,3 @@
+# Exchange recovery design
+
+**DOCUMENTED ONLY.** Define mailbox/database RPO and RTO with the business. Use Exchange-aware backups, off-host immutable copies where supported, restore verification and tested credentials. For queue incidents, preserve logs and message IDs before intervention. For a failed database in a DAG, check copy and content index health, activate a healthy copy using documented procedures, then reseed the failed copy. For non-DAG failure, restore database and logs from a known-good application-aware backup; plan dial-tone recovery where appropriate. A DAG is not a backup. No recovery drill was executed.

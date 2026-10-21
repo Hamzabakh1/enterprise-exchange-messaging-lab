@@ -1,0 +1,9 @@
+*.log
+*.evtx
+*.pfx
+*.p12
+*.key
+*.secrets.*
+*.credential*
+.env
+__pycache__/

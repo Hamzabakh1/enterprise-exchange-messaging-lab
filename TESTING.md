@@ -1,0 +1,3 @@
+# Test methodology
+
+Offline `unittest` validates six synthetic routing scenarios, including service/database outage and DAG copy/member risk. Python syntax and JSON schema-like required fields are checked. The model cannot verify real SMTP, transport agents, TLS handshake, mailbox delivery, DAG or backup. Future integration tests must include `Test-Mailflow`, `Get-MessageTrackingLog`, `Get-Queue`, `Get-MailboxDatabaseCopyStatus`, `Get-ServerHealth`, certificate checks, and an application-aware restore drill in an approved lab. Save exact output, build, timestamps and screenshots. See [validation report](VALIDATION_REPORT.md).

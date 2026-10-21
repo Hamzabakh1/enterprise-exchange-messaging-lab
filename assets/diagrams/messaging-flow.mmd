@@ -1,0 +1,9 @@
+flowchart LR
+  U[Client / sender] -->|SMTP submission| R[EX01 receive connector]
+  R --> Q[Transport queue]
+  Q --> C[Categorizer]
+  C -->|Local recipient| DB[Mailbox DB EX01]
+  C -->|External recipient| S[Scoped send connector]
+  S -->|TLS / SMTP| Internet[External domain]
+  DB <-->|DAG copy if deployed| DB2[EX02 copy]
+  AD[DC01 / DC02] -->|Recipient lookup| C

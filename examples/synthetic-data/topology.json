@@ -1,0 +1,13 @@
+{
+  "accepted_domains": ["atlas.example.test"],
+  "connectors": [{"name": "Outbound-Internet-Simulation", "domains": ["*"], "enabled": true}],
+  "mailboxes": {
+    "lab.alice@atlas.example.test": {"used_mb": 100, "send_quota_mb": 1024},
+    "lab.bob@atlas.example.test": {"used_mb": 250, "send_quota_mb": 1024}
+  },
+  "certificate": {"tls_required": true, "expires": "2027-12-31"},
+  "queue": {"status": "Ready"},
+  "services": {"MSExchangeTransport": "Running", "MSExchangeIS": "Running"},
+  "databases": {"DB01": {"mounted": true, "copy_status": "Healthy"}},
+  "dag": {"enabled": false, "members": []}
+}
