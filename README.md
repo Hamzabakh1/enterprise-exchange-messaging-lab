@@ -22,16 +22,6 @@ Define a supported build, least-privilege transport configuration, quota and cer
 
 This editable SVG is the reference design; its Exchange nodes show the intended topology, not deployed servers or delivered mail.
 
-```mermaid
-flowchart LR
-  A[Sender] --> R[Receive connector]
-  R --> T[Transport / categorizer]
-  T --> DB[Mailbox database]
-  T --> S[Send connector]
-  S --> X[External SMTP]
-  DB <-->|DAG when deployed| DB2[EX02 database copy]
-```
-
 Editable [messaging flow](assets/diagrams/messaging-flow.mmd) and [full architecture](ARCHITECTURE.md).
 
 ## Technology stack and infrastructure requirements
